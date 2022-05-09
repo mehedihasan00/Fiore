@@ -293,3 +293,6 @@ header.main-header .header .shopping-cart-wrapper .widget_shopping_cart_content 
     padding-left: 15px;
     line-height: 20px;
 }
+.sticky-header .product-category a {
+    padding-left: 40px;
+}
