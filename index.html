@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <!-- PE Icon -->
     <!-- https://themes-pixeden.com/font-demos/7-stroke/ -->
     <link rel="stylesheet" href="asset/Icon-font-7/pe-icon/css/pe-icon-7-stroke.css">
@@ -123,7 +125,7 @@
     <div class="sticky-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg p-0">
-                <div class="container-fluid">
+                <div class="container-fluid ps-0">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -142,24 +144,38 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-0 active" aria-current="page" href="#">Home</a>
+                            <a class="nav-mod-link active" aria-current="page" href="#"><span class="x-menu-text">Home</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="#">Link</a>
-                        </li>
-                        <li class="nav-item p-0 dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                        <li class="nav-item dropdown">
+                            <a class="nav-mod-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="x-menu-text">Shop</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-mod-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="x-menu-text">Categories</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-mod-link" href="#"><span class="x-menu-text">About Us</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-mod-link"><span class="x-menu-text">Contact Us</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-mod-link" href="#"><span class="x-menu-icon"><i class="pe-7s-search"></i></span></a>
                         </li>
                     </ul>
                   </div>
@@ -167,7 +183,103 @@
             </nav>
         </div>
     </div>
+    <div id="wrapper-content">
+        <main class="site-content">
+            <div class="fullwidth">
+                <div class="row margin-bottom-30">
+                    <div class="col-sm-12">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="slider-image image1">
+                                    <!-- <img src="img/1.-1920-x-600.webp"> -->
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="slider-image image2">
+                                    <!-- <img src="img/2.-1920-x-600.webp"> -->
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="slider-image image3 ">
+                                    <!-- <img src="img/3.-1920-x-600.webp"> -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row margin-bottom-30">
+                    <div class="col-lg-4 margin-bottom-30">
+                        <div class="zorka-icon-box">
+                            <a href="" class="zbox-title">Free Shipping Worldwide</a>
+                            <a href="" class="zbox-icon"><i class="pe-7s-cart"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 margin-bottom-30">
+                        <div class="zorka-icon-box" style="background-color: #c0ab90;">
+                            <a href="" class="zbox-title">Giveaway Everyweek</a>
+                            <a href="" class="zbox-icon" style="background-color: #ac9981;"><i class="pe-7s-gift"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 margin-bottom-30">
+                        <div class="zorka-icon-box" style="background-color: #7f8fa0;">
+                            <a href="" class="zbox-title">Sales Up to 70% off</a>
+                            <a href="" class="zbox-icon" style="background-color: #728090;"><i class="pe-7s-diamond"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row flex-column">
+                    <div class="col-3">
+                        <div class="wpb-wrapper">
+                            <div class="title-shortcode">
+                                <h2 class="text-uppercase ps-3">Top Rated</h2>
+                            </div>
+                            <div class="product-listing row">
+                                <div class="col" style="padding-bottom: 20px;">
+                                    <div class="product-thumb">
+                                        <div class="product-image-hover translate-top-to-bottom">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
 
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          loop: true,
+        //   autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        //   },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
     <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
