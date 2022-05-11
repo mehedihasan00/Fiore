@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 1.6;
@@ -14,7 +14,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 20px;
@@ -443,5 +443,184 @@ header.main-header .header .shopping-cart-wrapper .widget_shopping_cart_content 
     float: left;
     margin-bottom: 0px;
     margin-right: 20px;
+    position: relative;
     overflow: hidden;
+}
+.product-thumb-primary {
+    transform: translatey(0%);
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+}
+.product-thumb img {
+    width: 100%;
+}
+.product-thumb-secondary {
+    transform: translatey(-101%);
+    z-index: 1;
+    opacity: 1;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+}
+.product-min:hover .product-thumb-secondary {
+    transform: translatey(0%);
+}
+.product-quick-view {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    background: #f04;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 100%;
+    z-index: 4;
+    transform: scale(0);
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+}
+.product-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.product-min:hover .product-quick-view {
+    transform: scale(1);
+    color: #FFFFFF;
+}
+.product-min .product-info {
+    padding-left: 104px;
+}
+.product-min .product-name {
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    display: block;
+    color: #212121;
+    letter-spacing: 0.25px;
+    margin-bottom: 4px;
+}
+.product-min .price {
+    margin-bottom: 10px;
+    text-align: left;
+    color: #f04;
+    font-size: 14px;
+    display: block;
+    font-weight: normal;
+    font-family: Montserrat;
+}
+.product-min .amount {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.wpb-wrapper .trending-product {
+    position: relative;
+    min-height: 637px;
+}
+.wpb-wrapper .nav-mod {
+    justify-content: space-around;
+    border-bottom: 0px !important;
+    margin-bottom: 30px;
+}
+
+.wpb-wrapper .nav-tabs .nav-link.active {
+    border-color: #fff #fff red !important;
+}
+.wpb-wrapper .nav-tabs .nav-link:hover {
+    border-color: #fff #fff red !important;
+}
+.wpb-wrapper .nav-mod li button {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #666666;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+}
+.trending-product .product-large {
+    /* width: 300px; */
+    height: auto;
+    margin-bottom: 22px;
+    position: relative;
+    overflow: hidden;
+}
+.product-large img {
+    width: 100%;
+    height: 100%;
+}
+.product-large:hover .product-thumb-secondary {
+    transform: translatey(0%);
+}
+.product-cat {
+    text-align: center;
+}
+.trending-product .product-cat a {
+    font-family: Montserrat;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #868686;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.product-name {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 400;
+    display: block;
+    color: #212121;
+    letter-spacing: 0.25px;
+}
+.trending-product .price {
+    text-align: center;
+    color: #f04;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-family: Montserrat;
+}
+.trending-product .product-button {
+    text-align: center;
+    position: relative;
+}
+.add-to-cart-btn {
+    font-family: Montserrat;
+    background-color: #f04;
+    border: 1px solid #f04;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -0.4px;
+    line-height: 1.2;
+    font-size: 13px;
+    padding: 10.5px 25px;
+    border-radius: 38px;
+    /* color: #999999; */
+    /* background-color: #eee;
+    border: 1px solid #eee; */
+    font-weight: bold;
+    transition: all .5s ease-out;
+}
+.compare-button {
+    color: #fff;
+    background-color: #f04;
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+    padding: 10px 12px;
 }
