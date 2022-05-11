@@ -599,7 +599,7 @@ header.main-header .header .shopping-cart-wrapper .widget_shopping_cart_content 
     text-align: center;
     position: relative;
 }
-.add-to-cart-btn {
+.add-to-cart-btn, .add-to-wishlist {
     font-family: Montserrat;
     background-color: #f04;
     border: 1px solid #f04;
