@@ -27,8 +27,34 @@ a, a:hover, a:focus, a:active, a.active {
     text-decoration: none;
     outline: none;
 }
+.button-2 {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
 ol, ul {
     overflow-wrap: break-word;
+}
+.px-6, .px-sm-6, .px-md-6, .px-lg-6 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
 }
 .margin-bottom-20 {
     margin-bottom: 20px;
@@ -963,7 +989,169 @@ footer .footer-top {
     text-transform: uppercase;
     font-size: 1.6rem;
 }
+.service-icon-box {
+    text-align: center;
+}
+.service-icon-box .sbox-icon {
+    display: block;
+}
+.service-icon-box .sbox-icon i {
+    font-size: 48px;
+    color: #f04;
+}
+.service-icon-box .sbox-title {
+    display: inline-block;
+    color: #25282c;
+    font-weight: bold;
+    font-family: Montserrat;
+    font-size: 14px;
+}
 .service-icon-box p {
     padding-top: 0.6rem;
     margin-bottom: 1.2rem;
+    color: #777777;
+}
+.portfolio-heading h2 {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 0;
+}
+.portfolio .portfolio-filter button {
+    text-transform: capitalize;
+}
+.portfolio-container .portfolio-item {
+    transition: all 300ms ease 0s;
+}
+.portfolio-container .portfolio-item img {
+    width: 100%;
+    height: auto;
+    border: 10px solid transparent;
+    transition: all .5s cubic-bezier(.215, .61, .355, 1);
+}
+.portfolio-container .portfolio-item:hover img {
+    background-color: transparent;
+    border: solid 10px #dedede;
+}
+.portfolio-container .portfolio-item:hover .product-quick-view {
+    transform: scale(1);
+}
+.portfolio-container .portfolio-item .product-quick-view:hover {
+    color: #fff;
+}
+.testimonial h6 {
+    margin: 0;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+.testimonial-item p {
+    padding-left: 10px;
+    text-align: left;
+    margin: 0;
+    margin-left: 130px;
+}
+.testimonial-item .testimonial-name {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 400;
+    color: #25282c;
+    text-transform: uppercase;
+    line-height: 1.6;
+    padding-bottom: 8px;
+}
+.testimonial-item .testimonial-job {
+    font-size: 13px;
+    font-style: italic;
+    color: #202020;
+    letter-spacing: 3px;
+    line-height: 1.2;
+}
+.testimonial-item .testimonial-content {
+    max-width: 830px;
+    font-size: 14px;
+    /* background: url(https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://fiore.com.bd/wp-content/themes/zorka/shortcode/assets/images/quote.png) 0 15px no-repeat; */
+    padding-top: 19px;
+    color: #444;
+    line-height: 2;
+    letter-spacing: 0.2px;
+}
+.our-team .team-heading {
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    font-family: Montserrat;
+}
+.our-team-item .our-team-img {
+    overflow: hidden;
+}
+.our-team-item .our-team-img img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transition: all .2s ease-in-out;
+}
+.our-team-item:hover .our-team-img img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.our-team-item .card .card-title {
+    font-size: 14px;
+}
+.our-team-item .team-designation {
+    font-style: italic;
+    font-size: 13px;
+    color: #202020;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    text-align: center;
+}
+.our-team-item .our-team-social {
+    padding: 0;
+    justify-content: center;
+}
+.our-team-item ul li {
+    padding: 0 9px;
+    display: inline-block;
+}
+.our-team-item ul li a {
+    transition: all .5s ease 0s;
+    color: #CCCCCC;
+}
+.our-team-item ul li a i {
+    font-size: 15px;
+}
+.our-team-item ul li a.team-fb:hover i {
+    color: #4B6EA8;
+}
+.our-team-item ul li a.team-twitter:hover i {
+    color: #4FD5F8;
+}
+.our-team-item ul li a.team-instagram:hover i {
+    color: #F63E28;
+}
+.our-team-item ul li a.team-linkedin:hover i {
+    color: #0189C3;
+}
+.counter {
+    background-image: url("../img/banner/about-us/bg-counter.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.counter .customer-counter {
+    padding: 11rem 0;
+}
+.counter .customer-counter h1 {
+    margin: 0;
+}
+.counter .customer-counter p.counter-text {
+    font-size: 13px;
+    color: #1F1F1F;
+    line-height: 1.4;
+    margin-top: 12px;
+    text-transform: uppercase;
 }

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.product-slider .owl-carousel').owlCarousel({
         loop: false,
         margin: 10,
         nav: true,
@@ -22,5 +22,15 @@ $(document).ready(function(){
             items: 3
           }
         }
+      })
+
+      $('.testimonial-carousel .owl-carousel').owlCarousel({
+        loop: false,
+        margin: 10,
+        nav: false,
+        dots: true,
+        items: 1,
+        autoplay: true,
+        autoplayHoverPause: true,
       })
 });
