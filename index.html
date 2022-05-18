@@ -814,7 +814,7 @@
                                                                 </div>
                                                                 <a href="#" class="product-quick-view" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" style="white-space: nowrap;">
                                                                     <i class="pe-7s-search"></i>
-                                                                </a>
+                                                                </a>                                                                
                                                                 <a href="#" class="product-link"></a>
                                                             </div>
                                                             <div class="product-cat">
@@ -844,10 +844,27 @@
                                                                         <img src="img/product/20.webp">
                                                                     </div>
                                                                 </div>
-                                                                <a href="#" class="product-quick-view" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" style="white-space: nowrap;">
+                                                                <a href="#staticBackdrop" class="product-quick-view" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" style="white-space: nowrap;">
                                                                     <i class="pe-7s-search"></i>
                                                                 </a>
                                                                 <a href="#" class="product-link"></a>
+                                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog">
+                                                                      <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                          ...
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                          <button type="button" class="btn btn-primary">Save changes</button>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div class="product-cat">
                                                                 <a href="">Occasional Kurta</a>
@@ -1595,9 +1612,9 @@
       </script>
     <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
+        $(document).ready(function(){
+        $('[data-bs-toggle="tooltip"]').tooltip();
+        });
     </script>
     <script src="vendor/slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/slick-slider.js"></script>
